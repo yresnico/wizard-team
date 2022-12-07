@@ -5,7 +5,7 @@ class Navigation {
         [1, 'personal-details.html'], [2, 'address.html'], [3, 'image-form.html'], [4, 'summary.html']
     ]);
     static phaseKeyMap = new Map([
-        [1, 'name'], [2, 'city'], [3, 'image']
+        [1, 'details'], [2, 'address'], [3, 'misc']
     ]);
         
     constructor(page_id) {

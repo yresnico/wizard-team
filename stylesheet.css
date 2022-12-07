@@ -22,7 +22,7 @@ input {
 }
 label {
     display: inline-block;
-    width: 150px;
+    width: 120px;
   }
 /* Errors styling */
   .error.active {
@@ -43,9 +43,17 @@ label {
     background-color: rgb(172, 198, 246);
     border: 3px solid black;
   }
-  #phase1Submit {
-    width: 50px;
+  .buttonDiv button {
+    width: 100px;
+    justify-content: center;
+    font:3rem;
     align-items: center;
+    font-size: 0.9rem;
+  }
+  .buttonDiv {
+    display: flex;
+    justify-content:center;
+    margin-top: 30px;
   }
   .required{
     color:brown;
