@@ -9,14 +9,16 @@ body {
     font-family: 'circular', Helvetica, sans-serif;
 }
   
-header {
+h1 {
     align-items: center;
-    margin-bottom: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 input {
     padding: 5px;
     width: 200px;
+    font-style: italic;
 }
 label {
     display: inline-block;
@@ -34,7 +36,22 @@ label {
     color: darkred;
     width: 10.2rem;
   }
-  .inputsFields{
+  .inputsField{
+    padding: 30px;
+    padding-bottom: 30px;
+    align-items: center;
+    background-color: rgb(172, 198, 246);
+    border: 3px solid black;
+  }
+  #phase1Submit {
+    width: 50px;
+    align-items: center;
+  }
+  .required{
+    color:brown;
+  }
+/*
+  .name, .email, .birthdate {
 
   }
-
+*/
