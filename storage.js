@@ -5,7 +5,7 @@ class Storage {
     }
 
     getData(key) {
-        sessionStorage.getItem()
+        sessionStorage.getItem(key)
     }
 
     setData(key, value) {
