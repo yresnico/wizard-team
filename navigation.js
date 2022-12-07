@@ -1,4 +1,9 @@
 class Navigation {
+    static pageArray = [1, 2, 3, 4];
+    static urlMap = new Map([
+        [1, 'personal-details.html'], [2, 'address.html'], [3, 'image-form.html'], [4, 'summary.html']
+    ])
+    
     constructior(page_id) {
         // this.page_id = page_id
     }
@@ -14,12 +19,12 @@ class Navigation {
     }
 
     getPrevious() {
-        // let currentPageIndex = Navigation.page_array.findIndex(this.page_id);
+        // let currentPageIndex = Navigation.pageArray.findIndex(this.page_id);
         // if(currentPageIndex === 0) {
         //     return '';
         // }
         // else {
-        //     return Navigation.url_map.get(currentPageIndex - 1);
+        //     return Navigation.urlMap.get(Navigation.pageArray[currentPageIndex - 1]);
         // }
     }
 
