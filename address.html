@@ -12,19 +12,19 @@
 <body>
     <h1>Register Wizard</h1>
     <div class="inputsField">
-        <div class="city">
-            <label for="city">City:</label>
-            <input type="text" placeholder="ex. Tel-Aviv">
-            <p class="error" aria-live="polite"></p>
-        </div>
         <div class="street">
             <label for="street">Street:</label>
-            <input type="text" placeholder="ex. Main St.">
+            <input type="text" placeholder="Main St." id="street">
+            <p class="error" aria-live="polite"></p>
+        </div>
+        <div class="city">
+            <label for="city">City:</label>
+            <input type="text" placeholder="Tel-Aviv" id="city">
             <p class="error" aria-live="polite"></p>
         </div>
         <div class="number">
             <label for="number">Number:</label>
-            <input type="text" placeholder="ex. 123">
+            <input type="text" placeholder="123" id="num">
             <p class="error" aria-live="polite"></p>
         </div>
         <div class="buttons">
@@ -32,5 +32,6 @@
         </div>
     </div>
 </body>
+<script type="module" src="main.js"></script>
 
 </html>
