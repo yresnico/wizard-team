@@ -10,7 +10,7 @@
 <body>
     <div id="wizardContainer">
         <h1>Register Wizard</h1>
-        <div id="phase1">
+        <div id="phase1" class="inputsField">
             <h2>Phase 1: Personal Details</h2>
             <div class="name">
                 <label for="name" title="Enter full name without initials">Name <span class="required">*</span></label>
@@ -18,7 +18,7 @@
                 <p class="error" aria-live="polite" id="nameMessage"></p> 
             </div>
             <div class="email">
-                <label for="email" title="Enter a valid email address">Email<span class="required">*</span></label>
+                <label for="email" title="Enter a valid email address">Email <span class="required">*</span></label>
                 <input class="inputRequired email" type="text" name="email" id="email" placeholder="name@host.tld" >
                 <p class="error" aria-live="polite"  id="emailMessage"></p> 
             </div>
@@ -27,8 +27,8 @@
                 <input class="inputRequired birthdate" type="text" name="birthdate" id="birthdate" placeholder="dd/MM/yy">
                 <p class="error" aria-live="polite"  id="birthdateMessage"></p> 
             </div>
-            <div>
-                <button type="button" id="phase1Submit">Next</button>
+            <div class="buttonDiv">
+                <button type="button"  id="phase1Submit">Next</button>
             </div>
         </div>
     </div>
