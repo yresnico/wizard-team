@@ -11,22 +11,23 @@
 <body>
     <h1>Register Wizard</h1>
     <div class="inputsField">
-        <div class="city">
-            <label for="city">City:</label>
-            <input type="text">
-            <p class="error" aria-live="polite"></p>
-        </div>
         <div class="street">
             <label for="street">Street:</label>
-            <input type="text">
+            <input type="text" id="street">
+            <p class="error" aria-live="polite"></p>
+        </div>
+        <div class="city">
+            <label for="city">City:</label>
+            <input type="text" id="city">
             <p class="error" aria-live="polite"></p>
         </div>
         <div class="number">
             <label for="number">Number:</label>
-            <input type="text">
+            <input type="text" id="num">
             <p class="error" aria-live="polite"></p>
         </div>
     </div>
 </body>
+<script type="module" src="main.js"></script>
 
 </html>
