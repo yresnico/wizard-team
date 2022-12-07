@@ -8,7 +8,7 @@ class Navigation {
         [1, 'name'], [2, 'city'], [3, 'image']
     ]);
         
-    constructior(page_id) {
+    constructor(page_id) {
         // this.page_id = page_id
     }
 
