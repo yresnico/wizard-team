@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
     <title>Document</title>
 </head>
 
@@ -13,18 +14,21 @@
     <div class="inputsField">
         <div class="street">
             <label for="street">Street:</label>
-            <input type="text" id="street">
+            <input type="text" placeholder="Main St." id="street">
             <p class="error" aria-live="polite"></p>
         </div>
         <div class="city">
             <label for="city">City:</label>
-            <input type="text" id="city">
+            <input type="text" placeholder="Tel-Aviv" id="city">
             <p class="error" aria-live="polite"></p>
         </div>
         <div class="number">
             <label for="number">Number:</label>
-            <input type="text" id="num">
+            <input type="text" placeholder="123" id="num">
             <p class="error" aria-live="polite"></p>
+        </div>
+        <div class="buttons">
+            <button type="button">Next</button>
         </div>
     </div>
 </body>
