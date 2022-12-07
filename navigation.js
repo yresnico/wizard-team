@@ -3,8 +3,11 @@ class Navigation {
     static pageArray = [1, 2, 3, 4];
     static urlMap = new Map([
         [1, 'personal-details.html'], [2, 'address.html'], [3, 'image-form.html'], [4, 'summary.html']
-    ])
-    
+    ]);
+    static phaseKeyMap = new Map([
+        [1, 'name'], [2, 'city'], [3, 'image']
+    ]);
+        
     constructior(page_id) {
         // this.page_id = page_id
     }
