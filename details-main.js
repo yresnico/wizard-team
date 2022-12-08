@@ -58,5 +58,6 @@ function submitPhase1() {
     wizardStorage.setData('email', email.value);
     wizardStorage.setData('birthdate', birthdate.value);
     wizardStorage.setData('details', 'name, email, birthdate');
+    navigation.goNext();
 }
 submit.addEventListener('click', submitPhase1);
