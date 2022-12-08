@@ -25,6 +25,7 @@ const prevPage = document.getElementById("prevPage");
 nextPage.addEventListener("click", () => {
     wizardStorage.setData("image", image.value);
   wizardStorage.setData("hobbies", JSON.stringify(checkboxesToUpload));
+  wizardStorage.setData("misc", true)
   navigation.goNext();
 });
 
