@@ -1,4 +1,4 @@
-class Navigation {
+export default class Navigation {
     static baseURL = 'http://localhost:5500/';
     static pageArray = [1, 2, 3, 4];
     static urlMap = new Map([
