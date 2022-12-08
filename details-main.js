@@ -11,46 +11,64 @@ const fullName = document.getElementById("name");
 const email = document.getElementById("email");
 const birthdate = document.getElementById("birthdate");
 const submit = document.getElementById('nextPage');
+
+
 submit.classList.add('submitDisabled')
 let validName = false;
 let validEmail = false;
 let validBirthdate = false;
+loadPhase1();
+function loadPhase1(){
+    if(wizardStorage.getData(Navigation.phaseKeyMap.get(1))){
+        fullName.value = wizardStorage.getData('name');
+        email.value = wizardStorage.getData('email');
+        birthdate.value = wizardStorage.getData('birthdate')
+        checkName();
+        checkEmail();
+        checkBirthdate(); 
+    }
+      
+}
 function checkBooleans() {
     return (validName && validEmail && validBirthdate);
 }
-
-fullName.addEventListener("input", () => {
+function checkName(){
     if(validate.checkNameValidity()) {
         validName = true;
-        if(checkBooleans){
+        if(checkBooleans()){
             submit.classList.remove('submitDisabled')
         }
     } else {
         validName = false;
     }
-});
+}
 
-email.addEventListener("input", () => {
+function checkEmail() {
     if(validate.checkEmailValidity()) {
         validEmail = true;
-        if(checkBooleans){
+        if(checkBooleans()){
             submit.classList.remove('submitDisabled')
         }
     } else {
         validEmail = false;
     }
-});
+}
 
-birthdate.addEventListener("input", () => {
+function checkBirthdate() {
     if(validate.checkBirthDateValidity()) {
         validBirthdate = true;
-        if(checkBooleans){
+        if(checkBooleans()){
             submit.classList.remove('submitDisabled')
         }
     } else {
         validBirthdate = false;
     }
-});
+}
+fullName.addEventListener("input", checkName);
+
+email.addEventListener("input", checkEmail);
+
+birthdate.addEventListener("input", checkBirthdate);
 
 
 function submitPhase1() {
