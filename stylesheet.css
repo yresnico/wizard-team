@@ -67,6 +67,7 @@ label {
   }
 
   .name, .email, .birthdate {
+  }
   
   .hobbies label{
     margin-bottom: 10px;
