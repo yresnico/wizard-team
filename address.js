@@ -1,11 +1,17 @@
 import FormValidation from "./formValidation.js";
+import Navigation from "./navigation.js";
+import WizardStorage from "./wizardStorage.js";
 
+const navigator = new Navigation(2);
 const validate = new FormValidation();
-const prevButton = document.getElementById("prevPage");
-const nextPage = document.getElementById("nextPage")
+const storage = new WizardStorage();
+const prevBtn = document.getElementById("prevPage");
+const nextBtn = document.getElementById("nextPage")
 const street = document.getElementById("street");
 const city = document.getElementById("city");
 const num = document.getElementById("number");
+
+navigator.onPageLoad();
 
 street.addEventListener("input", () => {
     validate.checkStreetValidity();
@@ -19,13 +25,19 @@ num.addEventListener("input", () => {
     validate.checkNumValidity();
 });
 
-prevButton.addEventListener("onClick", () => {
-    // Validate all fields
-    // checkCityValidity
-    // checkStreetValidity
-    // checkNumValidity
-    // Navigate to next page
-})
+prevBtn.addEventListener("click", () => {
+    e.preventDefault();
+    navigator.goBack();
+});
+
+nextBtn.addEventListener("click", () => {
+    if (validate.checkStreetValidity() && validate.checkCityValidity() && validate.checkNumValidity()) {
+        storage.setData("street", street.value);
+        storage.setData("number", number.value);
+        storage.setData("city", city.value)
+        navigator.goNext();
+    };
+});
 
 
 

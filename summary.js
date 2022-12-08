@@ -18,6 +18,7 @@ const btnReset = document.getElementById('btnReset');
 
 const wizardStorage = new WizardStorage();
 const navigator = new Navigation(4);
+navigator.onPageLoad();
 
 //TEST
 wizardStorage.setData('name', 'Aleksandra');
@@ -77,7 +78,7 @@ if(imageSrc){
 btnReset.addEventListener('click',(e) => {
     e.preventDefault();
     wizardStorage.clearData();
-    navigator.gotToFirst();
+    navigator.goToFirst();
 });
 
 btnBack.addEventListener('click', (e) => {
