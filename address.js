@@ -11,6 +11,7 @@ const street = document.getElementById("street");
 const city = document.getElementById("city");
 const num = document.getElementById("number");
 
+nextBtn.classList.add('submitDisabled');
 navigator.onPageLoad();
 
 street.addEventListener("input", () => {
@@ -38,11 +39,3 @@ nextBtn.addEventListener("click", () => {
         navigator.goNext();
     };
 });
-
-
-
-// const street = validate.checkStreetValidity();
-// if (street && all its friends) {
-//     local storage save
-//     pagin
-// }
