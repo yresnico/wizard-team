@@ -12,6 +12,7 @@ const numberSummary = document.getElementById('numberSummary');
 
 const hobbiesSummary = document.getElementById('hobbiesSummary');
 const imageSummary = document.getElementById('imageSummary');
+const hobbiesDiv = document.getElementById('hobbiesDiv');
 
 const btnBack = document.getElementById('btnBack');
 const btnReset = document.getElementById('btnReset');
@@ -51,13 +52,14 @@ if(numberValue){
 };
 
 let hobbiesValue = wizardStorage.getData('hobbies');
+console.log(hobbiesValue);
 if(hobbiesValue){
     hobbiesSummary.textContent += hobbiesValue;
-};
-
+} 
 let imageSrc = wizardStorage.getData('image');
 if(imageSrc){
     imageSummary.src = imageSrc;
+    imageSummary.alt = 'Image from ' + imageSrc;
 };
 
 btnReset.addEventListener('click',(e) => {

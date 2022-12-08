@@ -60,7 +60,7 @@ class FormValidation {
       if (birthDate === "") {
           birthDateError.textContent = "Please enter your birthdate."
       } else if (!regex.test(birthDate)) {
-          birthDateError.textContent = "Please enter your birthdate in a valid format.";
+          birthDateError.textContent = "Please enter your birthdate in a valid format";
       } else {
           birthDateError.textContent = "";
           birthDateError.className = "error";
