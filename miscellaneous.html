@@ -12,8 +12,8 @@
     <div class="inputsField">
       <h2>Phase 3: Miscellaneous</h2>
       <div class="image">
-        <label for="image">URL of image: </label>
-        <input type="url" placeholder=".jpg, .jpeg, .png" id="image" />
+        <label for="image">URL of image: <span class="required">*</span></label>
+        <input type="url" placeholder=".jpg, .gif, .png" id="image" />
         <p class="”error”" aria-live="”polite”"></p>
       </div>
       <div class="hobbies">
@@ -37,8 +37,8 @@
         <input type="checkbox" id="dolls" value="dolls" />
       </div>
       <div class="buttonDiv">
-        <button id="nextPage" type="button">Back</button>
-        <button id="prevPage" type="button">Next</button>
+        <button id="prevPage" type="button">Back</button>
+        <button id="nextPage" class="submitDisabled" type="button">Next</button>
       </div>
     </div>
     <script src="imageMain.js" type="module"></script>
