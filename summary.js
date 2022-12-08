@@ -77,7 +77,7 @@ if(imageSrc){
 btnReset.addEventListener('click',(e) => {
     e.preventDefault();
     wizardStorage.clearData();
-    navigator.gotToFirst();
+    navigator.goToFirst();
 });
 
 btnBack.addEventListener('click', (e) => {
