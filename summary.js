@@ -18,21 +18,6 @@ const btnReset = document.getElementById('btnReset');
 
 const wizardStorage = new WizardStorage();
 const navigator = new Navigation(4);
-navigator.onPageLoad();
-
-//TEST
-wizardStorage.setData('name', 'Aleksandra');
-wizardStorage.setData('email', 'andymar@gmail.com');
-wizardStorage.setData('birthday', '12/08/1994');
-
-wizardStorage.setData('street', 'hakaka');
-wizardStorage.setData('city', 'london');
-wizardStorage.setData('number', '12');
-
-wizardStorage.setData('hobbies', 'chess,dance');
-wizardStorage.setData('image', 'https://media.istockphoto.com/id/1203720438/vector/flower-line-icon-set-rose-tulip-in-vase-fruit-bouquet-spring-blossom-cactus-minimal-vector.jpg?s=1024x1024&w=is&k=20&c=RyiQHSwlKEAcWeCP9TwVJei9sh8YtPalPXZ0RtUUexU=');
-
-
 
 
 let nameValue = wizardStorage.getData('name');
