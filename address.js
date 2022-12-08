@@ -11,8 +11,6 @@ const street = document.getElementById("street");
 const city = document.getElementById("city");
 const num = document.getElementById("num");
 
-navigator.onPageLoad();
-
 street.addEventListener("input", () => {
     validate.checkStreetValidity();
 });
@@ -35,15 +33,7 @@ nextBtn.addEventListener("click", () => {
         storage.setData("street", street.value);
         storage.setData("number", num.value);
         storage.setData("city", city.value);
-        storage.setData("address", true)
+        storage.setData("address", "street number city");
         navigator.goNext();
     };
 });
-
-
-
-// const street = validate.checkStreetValidity();
-// if (street && all its friends) {
-//     local storage save
-//     pagin
-// }
