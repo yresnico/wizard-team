@@ -1,4 +1,7 @@
 /* Visual Styling */
+*{
+    box-sizing: border-box;
+}
 html {
     display: flex;
     justify-content: center;
@@ -43,14 +46,14 @@ label {
     background-color: rgb(172, 198, 246);
     border: 3px solid black;
   }
-  .buttonDiv button {
+  .buttonDiv button, .buttons button {
     width: 100px;
     justify-content: center;
     font:3rem;
     align-items: center;
     font-size: 0.9rem;
   }
-  .buttonDiv {
+  .buttonDiv, .buttons {
     display: flex;
     justify-content:center;
     margin-top: 30px;
@@ -58,8 +61,17 @@ label {
   .required{
     color:brown;
   }
-/*
-  .name, .email, .birthdate {
+  
+  .hobbies label{
+    margin-bottom: 10px;
+    width: 75px;
 
   }
-*/
+  .hobbies input{
+    margin-left: 10px;;
+  }
+  .image label{
+    width: 175px;
+    margin-bottom: 20px;
+  }
+  
