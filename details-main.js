@@ -12,9 +12,9 @@ const email = document.getElementById("email");
 const birthdate = document.getElementById("birthdate");
 const submit = document.getElementById('nextPage');
 submit.classList.add('submitDisabled')
-const validName = false;
-const validEmail = false;
-const validBirthdate = false;
+let validName = false;
+let validEmail = false;
+let validBirthdate = false;
 function checkBooleans() {
     return (validName && validEmail && validBirthdate);
 }
