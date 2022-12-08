@@ -6,13 +6,13 @@ const city = document.getElementById("city");
 const num = document.getElementById("num");
 
 street.addEventListener("input", () => {
-    validate.checkStreetValidity();
+  validate.checkStreetValidity();
 });
 
 city.addEventListener("input", () => {
-    validate.checkCityValidity();
+  validate.checkCityValidity();
 });
 
 num.addEventListener("input", () => {
-    validate.checkNumValidity();
+  validate.checkNumValidity();
 });
