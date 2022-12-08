@@ -3,7 +3,7 @@ import FormValidation from "./formValidation.js";
 const validate = new FormValidation();
 const street = document.getElementById("street");
 const city = document.getElementById("city");
-const num = document.getElementById("number");
+const num = document.getElementById("num");
 
 street.addEventListener("input", () => {
     validate.checkStreetValidity();
