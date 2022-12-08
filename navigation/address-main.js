@@ -8,6 +8,7 @@ const nextPage = document.getElementById("nextPage");
 nextPage.addEventListener("click", () => {
     navigation.goNext();
   });
+
   prevPage.addEventListener("click", () => {
     navigation.goBack();
   });
