@@ -80,11 +80,11 @@ class FormValidation {
     if (element.value === "") elError.textContent = "This field is mandatory";
   }
   #checkInputLenght(element) {
-    const maxLenght = 20;
+    const maxLength = 20;
     const el = document.getElementById(element);
     const elError = document.querySelector(`#${element} + p.error`);
 
-    if (el.value.length > maxLenght)
+    if (el.value.length > maxLength)
       elError.textContent = "This field cannot have more than 20 chars";
   }
 
