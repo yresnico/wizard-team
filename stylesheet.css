@@ -81,5 +81,8 @@ label {
   .summary{
     font-size: smaller;
   }
+  .welcomeMsg{
+    text-align: center;
+  }
 
   
