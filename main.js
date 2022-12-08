@@ -20,15 +20,19 @@ if (street && city && num) {
   });
 }
 
-const navigation = new Navigation();
+// const navigation = new Navigation(1);
 
-const nextPage = document.getElementById("nextPage");
-const prevPage = document.getElementById("prevPage");
+// const nextPage = document.getElementById("nextPage");
+// const prevPage = document.getElementById("prevPage");
 
-nextPage.addEventListener("click", () => {
-  navigation.goNext();
-});
+// if (nextPage) {
+//   nextPage.addEventListener("click", () => {
+//     navigation.goNext();
+//   });
+// }
 
-prevPage.addEventListener("click", () => {
-  navigation.goBack();
-});
+// if (prevPage) {
+//   prevPage.addEventListener("click", () => {
+//     navigation.goBack();
+//   });
+// }

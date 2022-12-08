@@ -14,7 +14,7 @@ export default class Navigation {
 
     onPageLoad() {
         if(!this.checkPhase) {
-            this.goPrevious()
+            this.goBack()
         }
     }
 
