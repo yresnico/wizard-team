@@ -33,9 +33,9 @@ label {
     padding: 0.5em 0.1em;
   }
   .error{
-    font-size: 75%;
-    margin-left: 5.3rem;
-    margin-top: 0;
+    font-size: 65%;
+    margin-left: 6rem;
+    margin-top: 0.2em;
     color: darkred;
     width: 10.2rem;
   }
@@ -85,4 +85,8 @@ label {
     text-align: center;
   }
 
-  
+  .submitDisabled {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+  }
