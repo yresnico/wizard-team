@@ -4,7 +4,7 @@ import Navigation from "./navigation.js";
 const validate = new FormValidation();
 const street = document.getElementById("street");
 const city = document.getElementById("city");
-const num = document.getElementById("number");
+const num = document.getElementById("num");
 
 if (street && city && num) {
   street.addEventListener("input", () => {

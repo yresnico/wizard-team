@@ -62,6 +62,12 @@ label {
     color:brown;
   }
   
+  img{
+    width: 100px;
+  }
+
+  .name, .email, .birthdate {
+  
   .hobbies label{
     margin-bottom: 10px;
     width: 75px;
