@@ -6,16 +6,29 @@ const street = document.getElementById("street");
 const city = document.getElementById("city");
 const num = document.getElementById("number");
 
-street.addEventListener("input", () => {
+if (street && city && num) {
+  street.addEventListener("input", () => {
     validate.checkStreetValidity();
-});
+  });
 
-city.addEventListener("input", () => {
+  city.addEventListener("input", () => {
     validate.checkCityValidity();
-});
+  });
 
-num.addEventListener("input", () => {
+  num.addEventListener("input", () => {
     validate.checkNumValidity();
-});
+  });
+}
 
 const navigation = new Navigation();
+
+const nextPage = document.getElementById("nextPage");
+const prevPage = document.getElementById("prevPage");
+
+nextPage.addEventListener("click", () => {
+  navigation.goNext();
+});
+
+prevPage.addEventListener("click", () => {
+  navigation.goBack();
+});
