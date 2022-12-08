@@ -1,8 +1,9 @@
+import WizardStorage from "./wizardStorage.js";
 export default class Navigation {
     static baseURL = 'http://localhost:5500/';
-    static pageArray = [1, 2, 3, 4];
+    static pageArray = [0, 1, 2, 3, 4];
     static urlMap = new Map([
-        [1, 'personal-details.html'], [2, 'address.html'], [3, 'image-form.html'], [4, 'summary.html']
+        [0, 'splash'], [1, 'personal-details.html'], [2, 'address.html'], [3, 'image-form.html'], [4, 'summary.html']
     ]);
     static phaseKeyMap = new Map([
         [1, 'details'], [2, 'address'], [3, 'misc']
@@ -13,13 +14,25 @@ export default class Navigation {
     }
 
     onPageLoad() {
-        if(!this.checkPhase) {
-            this.goPrevious()
+        if(!this.checkPhase()) {
+            this.goBack()
         }
     }
 
     checkPhase() {
-
+        let currentPageIndex = Navigation.pageArray.indexOf(this.page_id);
+        console.log('Current page index in order array', currentPageIndex)
+        if(currentPageIndex > 0){
+            const prevID = Navigation.pageArray[currentPageIndex - 1];
+            if(Navigation.phaseKeyMap.has(prevID)){
+                const storage = new WizardStorage();
+                if(storage.getData(Navigation.phaseKeyMap.get(prevID))){
+                    return true;
+                }
+                return false
+            }
+        }
+        return true;
     }
 
     getPrevious() {
