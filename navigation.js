@@ -2,7 +2,7 @@ import WizardStorage from "./wizardStorage.js";
 export default class Navigation {
     static pageArray = [0, 1, 2, 3, 4];
     static urlMap = new Map([
-        [0, '/splash.html'], [1, '/personal-details.html'], [2, '/address.html'], [3, '/miscellaneous.html'], [4, '/summary.html']
+        [0, '/splashScreen.html'], [1, '/personal-details.html'], [2, '/address.html'], [3, '/miscellaneous.html'], [4, '/summary.html']
     ]);
     static phaseKeyMap = new Map([
         [1, 'details'], [2, 'address'], [3, 'misc']
