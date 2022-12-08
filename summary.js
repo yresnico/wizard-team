@@ -1,4 +1,5 @@
 import WizardStorage from './wizardStorage.js';
+import Navigation from './navigation.js';
 
 
 const nameSummary = document.getElementById('nameSummary');
@@ -16,6 +17,7 @@ const btnBack = document.getElementById('btnBack');
 const btnReset = document.getElementById('btnReset');
 
 const wizardStorage = new WizardStorage();
+const navigator = new Navigation(4);
 
 //TEST
 wizardStorage.setData('name', 'Aleksandra');
@@ -75,12 +77,12 @@ if(imageSrc){
 btnReset.addEventListener('click',(e) => {
     e.preventDefault();
     wizardStorage.clearData();
-    //GO TO THE FIRST PAGE
+    navigator.gotToFirst();
 });
 
 btnBack.addEventListener('click', (e) => {
     e.preventDefault();
-    //GO TO PREVIOUS PAGE
+    navigator.goBack();
 });
 
 
